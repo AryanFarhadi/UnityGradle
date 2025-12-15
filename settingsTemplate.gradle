@@ -1,0 +1,35 @@
+pluginManagement {
+    repositories {
+        **ARTIFACTORYREPOSITORY**
+
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+
+        // ✅ Myket Maven Repository
+        maven {
+            url "https://maven.myket.ir"
+        }
+    }
+}
+
+include ':launcher', ':unityLibrary'
+**INCLUDES**
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        **ARTIFACTORYREPOSITORY**
+
+        google()
+        mavenCentral()
+
+        maven {
+            url "https://maven.myket.ir"
+        }
+
+        flatDir {
+            dirs "${project(':unityLibrary').projectDir}/libs"
+        }
+    }
+}
