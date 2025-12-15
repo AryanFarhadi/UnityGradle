@@ -1,4 +1,4 @@
-# UnityGradle
+# Unity Myket Gradle
 
 Use Myket Maven Repository in Unity (No VPN)
 
