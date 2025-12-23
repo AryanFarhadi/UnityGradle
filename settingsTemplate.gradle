@@ -1,6 +1,6 @@
 pluginManagement {
     repositories {
-        ARTIFACTORYREPOSITORY
+        **ARTIFACTORYREPOSITORY**
         
         maven {
             url "https://maven.myket.ir"
@@ -9,12 +9,12 @@ pluginManagement {
 }
 
 include ':launcher', ':unityLibrary'
-INCLUDES
+**INCLUDES**
 
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
-        ARTIFACTORYREPOSITORY
+        **ARTIFACTORYREPOSITORY**
 
         maven {
             url "https://maven.myket.ir"
