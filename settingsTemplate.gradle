@@ -1,12 +1,7 @@
 pluginManagement {
     repositories {
-        **ARTIFACTORYREPOSITORY**
-
-        gradlePluginPortal()
-        google()
-        mavenCentral()
-
-        // ✅ Myket Maven Repository
+        ARTIFACTORYREPOSITORY
+        
         maven {
             url "https://maven.myket.ir"
         }
@@ -14,15 +9,12 @@ pluginManagement {
 }
 
 include ':launcher', ':unityLibrary'
-**INCLUDES**
+INCLUDES
 
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
-        **ARTIFACTORYREPOSITORY**
-
-        google()
-        mavenCentral()
+        ARTIFACTORYREPOSITORY
 
         maven {
             url "https://maven.myket.ir"
